@@ -65,7 +65,7 @@ pipeline {
     post {
         always {
             // Надсилаємо звіт поштою або повідомленням
-            mail to: 'team@example.com',
+            mail to: 'helldegh@gmail.com',
                  subject: "Daily Build: ${currentBuild.fullDisplayName}",
                  body: "Build finished. Check results at ${env.BUILD_URL}"
         }
