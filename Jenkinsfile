@@ -10,6 +10,10 @@ pipeline {
         cron('H H * * *') // Запуск один раз на день
     }
 
+    tools {
+        jdk 'JDK 22' 
+    }
+
     stages {
         stage('Checkout') {
             steps {
