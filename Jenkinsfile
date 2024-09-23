@@ -14,7 +14,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Клонуємо репозиторій з GitHub з використанням credentialsId
-                git branch: '*/master', credentialsId: 'f3c2e9ff-c36a-45de-b501-f6f0ba8e9807', url: 'https://github.com/AnastasiiaDegtyaryova/cursova.git'
+                git branch: 'master', credentialsId: 'f3c2e9ff-c36a-45de-b501-f6f0ba8e9807', url: 'https://github.com/AnastasiiaDegtyaryova/cursova.git'
             }
         }
 
