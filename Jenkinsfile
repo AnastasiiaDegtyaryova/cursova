@@ -62,12 +62,12 @@ pipeline {
         }
     }
 
-    post {
-        always {
+    // post {
+        // always {
             // Надсилаємо звіт поштою або повідомленням
             // mail to: 'helldegh@gmail.com',
             //      subject: "Daily Build: ${currentBuild.fullDisplayName}",
             //      body: "Build finished. Check results at ${env.BUILD_URL}"
-        }
-    }
+        // }
+    // }
 }
