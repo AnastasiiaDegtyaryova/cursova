@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Test Suite">
+
+<!-- Тест для локального середовища -->
+<test name="API Tests - Local Environment">
+    <parameter name="environment" value="local" />
+    <classes>
+        <class name="api.tests.UserApiTests"/>
+        <class name="api.tests.BoardsApiTests"/>
+        <class name="api.tests.TasksApiTests"/>
+    </classes>
+</test>
+
+<!-- Тест для інтернет середовища -->
+<test name="API Tests - Internet Environment">
+    <parameter name="environment" value="internet" />
+    <classes>
+        <class name="api.tests.UserApiTests"/>
+        <class name="api.tests.BoardsApiTests"/>
+        <class name="api.tests.TasksApiTests"/>
+    </classes>
+</test>
+
+</suite>
