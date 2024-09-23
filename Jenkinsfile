@@ -13,8 +13,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Клонуємо репозиторій з GitHub
-                git 'https://github.com/your-repo/project-name.git'
+                // Клонуємо репозиторій з GitHub з використанням credentialsId
+                git branch: '*/master', credentialsId: 'f3c2e9ff-c36a-45de-b501-f6f0ba8e9807', url: 'https://github.com/your-repo/project-name.git'
             }
         }
 
@@ -71,4 +71,3 @@ pipeline {
         }
     }
 }
-
