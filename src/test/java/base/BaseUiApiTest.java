@@ -14,7 +14,7 @@ public class BaseUiApiTest extends BaseUiTest {
 
     @BeforeClass
     @Parameters({"environment", "browser"})
-    public void setUp(@Optional("internet") String environment, @Optional("chrome") String browser) {
+    public void setUp(@Optional("local") String environment, @Optional("chrome") String browser) {
         super.setUp(environment, browser);
         this.environment = environment;
 

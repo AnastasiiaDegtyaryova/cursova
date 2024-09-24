@@ -16,7 +16,7 @@ public class UserApiTests extends BaseApiTest {
 
     @BeforeClass
     @Parameters({"environment"})
-    public void setup(@Optional("internet") String environment) {
+    public void setup(@Optional("local") String environment) {
         super.setup(environment);
     }
 

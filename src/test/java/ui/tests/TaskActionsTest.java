@@ -3,10 +3,10 @@ package ui.tests;
 import api.tests.BoardsApiTests;
 import api.tests.UserApiTests;
 import base.BaseUiApiTest;
+import com.codeborne.selenide.WebDriverRunner;
 import io.restassured.response.Response;
 import org.testng.annotations.*;
-import static com.codeborne.selenide.Condition.appear;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.restassured.RestAssured.given;
@@ -15,6 +15,7 @@ public class TaskActionsTest extends BaseUiApiTest {
 
     private int userId;
     private int projectId;
+    private String taskId;
 
     private BoardsApiTests boardsApiTests;
     private UserApiTests userApiTests;
@@ -69,16 +70,17 @@ public class TaskActionsTest extends BaseUiApiTest {
 
     @Test
     public void testLoginAndCreateTask() {
-        System.out.println("Opening URL: " + baseUrl + "/login");
+        // Відкриття сторінки логіну
         open(baseUrl + "/login");
+        $("#form-username").should(appear).setValue("TestUser");
+        $("#form-password").should(appear).setValue("123456");
+        $x("//button[text()='Sign in']").should(appear).click();
 
-        $("#form-username").setValue("TestUser");
-        $("#form-password").setValue("123456");
-        $x("//button[text()='Sign in']").click();
-
-        $(byLinkText("My projects")).should(appear).click();
+        // Тепер логін вже виконаний, і можна відразу переходити до тесту
+        $(byLinkText("My projects")).click();
         $(byLinkText("TestBoard")).should(appear).click();
 
+        // Створення нового завдання
         $("div.board-add-icon a.js-modal-large").should(appear).click();
         $("#form-title").setValue("Test Task");
         $("textarea[name='description']").setValue("This is a test task description.");
@@ -90,6 +92,40 @@ public class TaskActionsTest extends BaseUiApiTest {
         $("button.ui-datepicker-close").click();
         $("button.btn.btn-blue").click();
 
-        $(byLinkText("Test Task")).should(appear).shouldHave(text("Test Task"));
+        // Натискаємо на створений таск, щоб відкрити його сторінку і отримати taskId
+        $x("//a[contains(text(), 'Test Task')]").should(appear).click();
+        String currentUrl = WebDriverRunner.url(); // Отримуємо поточний URL
+        taskId = currentUrl.split("/task/")[1].split("/")[0]; // Отримуємо taskId з URL
+        System.out.println("Created Task ID: " + taskId);
+    }
+
+    @Test(dependsOnMethods = {"testLoginAndCreateTask"})
+    public void testAddCommentToTask() {
+
+        if (taskId == null) {
+            throw new RuntimeException("Task ID was not set in the previous test.");
+        }
+
+        $x("//a[@href='/task/" + taskId + "/edit' and contains(@class, 'js-modal-large')]")
+                .should(appear).click();
+
+        $("textarea[name='description']").should(appear).setValue("This is a test comment");
+
+        $x("(//button[contains(@class, 'btn') and contains(@class, 'btn-blue')])[2]").should(appear).click();;
+
+        $("p").should(appear).shouldHave(text("This is a test comment"));
+    }
+
+    @Test(dependsOnMethods = {"testAddCommentToTask"})
+    public void testCloseTask() {
+        $x("//a[contains(@href, '/task/" + taskId + "/close')]").should(appear).click();
+
+        $("#modal-confirm-button").should(appear).click();
+
+        $x("//span[contains(text(), 'closed')]").should(appear);
+
     }
 }
+
+
+

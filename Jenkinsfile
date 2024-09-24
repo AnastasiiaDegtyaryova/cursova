@@ -10,6 +10,10 @@ pipeline {
         cron('H H * * *') // Запуск один раз на день
     }
 
+    tools {
+        jdk 'JDK 22'
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -59,15 +63,6 @@ pipeline {
                     allure includeProperties: false, reportBuildPolicy: 'ALWAYS', results: [[path: "${UI_TEST_REPORT_DIR}"]]
                 }
             }
-        }
-    }
-
-    post {
-        always {
-            // Надсилаємо звіт поштою або повідомленням
-            mail to: 'helldegh@gmail.com',
-                 subject: "Daily Build: ${currentBuild.fullDisplayName}",
-                 body: "Build finished. Check results at ${env.BUILD_URL}"
         }
     }
 }

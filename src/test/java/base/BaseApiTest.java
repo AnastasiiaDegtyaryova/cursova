@@ -12,10 +12,11 @@ public class BaseApiTest  {
 
     @BeforeClass
     @Parameters({"environment"})
-    public void setup(@Optional("internet") String environment) {
+    public void setup(@Optional("local") String environment) {
         ConfigLoader configLoader = new ConfigLoader();
         baseUrl = configLoader.getApiUrl(environment);
         basicAuthUsername = configLoader.getAuthUsername(environment);
         basicAuthToken = configLoader.getAuthToken(environment);
     }
 }
+

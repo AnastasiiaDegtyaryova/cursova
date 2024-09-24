@@ -12,9 +12,10 @@ public class BaseUiTest extends BrowserSetup  {
 
     @BeforeClass
     @Parameters({"environment", "browser"})
-    public void setUp(@Optional("internet") String environment, @Optional("chrome")String browser) {
+    public void setUp(@Optional("local") String environment, @Optional("chrome")String browser) {
         ConfigLoader configLoader = new ConfigLoader();
-        String baseUrl = configLoader.getBaseUrl(environment);
+        //String baseUrl = configLoader.getBaseUrl(environment);
+        this.baseUrl = configLoader.getBaseUrl(environment);
 
         driver = initializeDriver(browser);
         driver.get(baseUrl + "/login");
