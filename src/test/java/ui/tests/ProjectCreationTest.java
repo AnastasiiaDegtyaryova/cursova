@@ -1,7 +1,6 @@
 package ui.tests;
 
 import base.BaseUiTest;
-import helpers.ConfigLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -18,8 +17,6 @@ public class ProjectCreationTest extends BaseUiTest {
     @Test
     @Parameters({"browser", "environment"})
     public void createProjectTest(@Optional("chrome") String browser, @Optional("local") String environment) {
-        ConfigLoader configLoader = new ConfigLoader();
-        String baseUrl = configLoader.getBaseUrl(environment);
 
         driver.get(baseUrl + "/login");
 

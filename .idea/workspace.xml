@@ -10,27 +10,18 @@
       <change afterPath="$PROJECT_DIR$/../RDProject/out/production/RDProject/out/production/RDProject/RDProject.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RDProject/src/RDProject.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../RDProject/src/out/production/RDProject/RDProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/BrowserSetup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/helpers/ConfigLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/BoardsApiTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/TasksApiTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/api/tests/UserApiTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseUiApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/BaseUiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/tests/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/tests/LoginTestSelenide.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/tests/ProjectCreationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ui/tests/TaskActionsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/BoardsApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/BoardsApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/TasksApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/TasksApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/tests/UserApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/tests/UserApiTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseUiApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseUiApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/BaseUiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseUiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/LoginTestSelenide.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/LoginTestSelenide.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/ProjectCreationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/ProjectCreationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ui/tests/TaskActionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ui/tests/TaskActionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_ui.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +37,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -56,34 +48,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_api.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui_all.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui_ff.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BoardApiTests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.BoardsApiTests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTestSelenide.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.ProjectCreationTest.createProjectTest.executor&quot;: &quot;Debug&quot;,
-    &quot;TestNG.ProjectCreationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TaskActionsTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TaskCreationTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TaskCreationTest.testLoginAndCreateTask.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TasksApiTests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.UserApiTests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.UserApiTests.testRemoveUser.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_api.xml.executor": "Run",
+    "TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui.xml.executor": "Run",
+    "TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui_all.xml.executor": "Run",
+    "TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui_ff.xml.executor": "Run",
+    "TestNG.BoardApiTests.executor": "Run",
+    "TestNG.BoardsApiTests.executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTestSelenide.executor": "Run",
+    "TestNG.ProjectCreationTest.createProjectTest.executor": "Debug",
+    "TestNG.ProjectCreationTest.deleteProjectTest.executor": "Debug",
+    "TestNG.ProjectCreationTest.executor": "Run",
+    "TestNG.TaskActionsTest.executor": "Run",
+    "TestNG.TaskCreationTest.executor": "Run",
+    "TestNG.TaskCreationTest.testLoginAndCreateTask.executor": "Run",
+    "TestNG.TasksApiTests.executor": "Run",
+    "TestNG.UserApiTests.executor": "Run",
+    "TestNG.UserApiTests.testRemoveUser.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_api.xml">
+}]]></component>
+  <component name="RunManager" selected="TestNG.ProjectCreationTest">
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="cursova_api_only" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ui.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ui.tests" />
+      <option name="MAIN_CLASS_NAME" value="ui.tests.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTestSelenide" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="cursova_api_only" />
       <extension name="coverage">
@@ -145,23 +155,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="cursova_api_only" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng_ui.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_api.xml" />
-        <item itemvalue="TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_ui.xml" />
-        <item itemvalue="TestNG.TaskActionsTest" />
         <item itemvalue="TestNG.ProjectCreationTest" />
+        <item itemvalue="TestNG.TaskActionsTest" />
         <item itemvalue="TestNG.LoginTestSelenide" />
+        <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG./Users/nastya/IdeaProjects/cursova_api_only/src/test/resources/testng_api.xml" />
       </list>
     </recent_temporary>
   </component>

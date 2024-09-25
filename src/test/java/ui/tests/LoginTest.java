@@ -43,4 +43,5 @@ public class LoginTest extends BaseUiTest {
         String errorMessage = driver.findElement(By.cssSelector("p.alert.alert-error")).getText();
         Assert.assertEquals(errorMessage, "Bad username or password", "Error message should match.");
     }
+
 }

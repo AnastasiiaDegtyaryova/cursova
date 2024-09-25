@@ -8,9 +8,6 @@
         <parameter name="headless" value="false" /> <!-- Додано параметр headless -->
         <classes>
             <class name="ui.tests.LoginTest"/>
-            <class name="ui.tests.LoginTestSelenide"/>
-            <class name="ui.tests.ProjectCreationTest"/>
-            <class name="ui.tests.TaskActionsTest"/>
         </classes>
     </test>
 
@@ -21,9 +18,6 @@
         <parameter name="headless" value="true" /> <!-- Вибраний headless режим -->
         <classes>
             <class name="ui.tests.LoginTest"/>
-            <class name="ui.tests.LoginTestSelenide"/>
-            <class name="ui.tests.ProjectCreationTest"/>
-            <class name="ui.tests.TaskActionsTest"/>
         </classes>
     </test>
 
@@ -34,9 +28,6 @@
         <parameter name="headless" value="false" /> <!-- Headless не обов'язковий для Firefox -->
         <classes>
             <class name="ui.tests.LoginTest"/>
-            <class name="ui.tests.LoginTestSelenide"/>
-            <class name="ui.tests.ProjectCreationTest"/>
-            <class name="ui.tests.TaskActionsTest"/>
         </classes>
     </test>
 

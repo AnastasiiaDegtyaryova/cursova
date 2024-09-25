@@ -14,7 +14,6 @@ public class BaseUiTest extends BrowserSetup  {
     @Parameters({"environment", "browser"})
     public void setUp(@Optional("local") String environment, @Optional("chrome")String browser) {
         ConfigLoader configLoader = new ConfigLoader();
-        //String baseUrl = configLoader.getBaseUrl(environment);
         this.baseUrl = configLoader.getBaseUrl(environment);
 
         driver = initializeDriver(browser);
@@ -25,4 +24,5 @@ public class BaseUiTest extends BrowserSetup  {
     public void tearDown() {
         quitDriver();
     }
+
 }

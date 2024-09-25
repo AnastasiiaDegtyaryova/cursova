@@ -72,5 +72,6 @@ public class TasksApiTests extends BaseApiTest {
         Assert.assertEquals(response.getStatusCode(), 200, "Статус відповіді не відповідає очікуваному.");
         response.prettyPrint();
     }
+
 }
 

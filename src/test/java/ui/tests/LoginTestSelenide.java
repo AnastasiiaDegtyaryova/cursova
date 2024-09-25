@@ -48,4 +48,5 @@ public class LoginTestSelenide extends BaseUiTest {
         $x("//button[text()='Sign in']").click();
         $("p.alert.alert-error").shouldHave(text("Bad username or password"));
     }
+
 }

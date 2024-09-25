@@ -70,17 +70,15 @@ public class TaskActionsTest extends BaseUiApiTest {
 
     @Test
     public void testLoginAndCreateTask() {
-        // Відкриття сторінки логіну
+
         open(baseUrl + "/login");
         $("#form-username").should(appear).setValue("TestUser");
         $("#form-password").should(appear).setValue("123456");
         $x("//button[text()='Sign in']").should(appear).click();
 
-        // Тепер логін вже виконаний, і можна відразу переходити до тесту
         $(byLinkText("My projects")).click();
         $(byLinkText("TestBoard")).should(appear).click();
 
-        // Створення нового завдання
         $("div.board-add-icon a.js-modal-large").should(appear).click();
         $("#form-title").setValue("Test Task");
         $("textarea[name='description']").setValue("This is a test task description.");
@@ -92,7 +90,6 @@ public class TaskActionsTest extends BaseUiApiTest {
         $("button.ui-datepicker-close").click();
         $("button.btn.btn-blue").click();
 
-        // Натискаємо на створений таск, щоб відкрити його сторінку і отримати taskId
         $x("//a[contains(text(), 'Test Task')]").should(appear).click();
         String currentUrl = WebDriverRunner.url(); // Отримуємо поточний URL
         taskId = currentUrl.split("/task/")[1].split("/")[0]; // Отримуємо taskId з URL
@@ -123,6 +120,7 @@ public class TaskActionsTest extends BaseUiApiTest {
         $("#modal-confirm-button").should(appear).click();
 
         $x("//span[contains(text(), 'closed')]").should(appear);
+
 
     }
 }

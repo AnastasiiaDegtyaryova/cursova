@@ -18,5 +18,6 @@ public class BaseApiTest  {
         basicAuthUsername = configLoader.getAuthUsername(environment);
         basicAuthToken = configLoader.getAuthToken(environment);
     }
+
 }
 
